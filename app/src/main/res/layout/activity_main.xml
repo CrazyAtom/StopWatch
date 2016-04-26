@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        style="@style/AppTheme"
+        android:baselineAligned="false"
+        android:divider="#c0c0c0"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/h2"
+            android:gravity="center"
+            android:fontFamily="Monaco"
+            android:numeric="integer"
+            android:layout_weight="1"
+            android:textIsSelectable="true"
+            android:textSize="70dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/h1"
+            android:gravity="center"
+            android:textSize="70dp"
+            android:fontFamily="Monaco"
+            android:numeric="integer"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=":"
+            android:id="@+id/divHour"
+            android:gravity="center"
+            android:textSize="70dp"
+            android:fontFamily="Monaco"
+            android:numeric="integer"
+            android:layout_weight="0.5" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/min2"
+            android:gravity="center"
+            android:textSize="70dp"
+            android:fontFamily="Monaco"
+            android:numeric="integer"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/min1"
+            android:gravity="center"
+            android:textSize="70dp"
+            android:fontFamily="Monaco"
+            android:numeric="integer"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="."
+            android:id="@+id/divMin"
+            android:gravity="center"
+            android:textSize="70dp"
+            android:fontFamily="Monaco"
+            android:numeric="integer"
+            android:layout_weight="0.5" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/ms2"
+            android:gravity="center"
+            android:textSize="70dp"
+            android:fontFamily="Monaco"
+            android:numeric="integer"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/ms1"
+            android:gravity="center"
+            android:textSize="70dp"
+            android:fontFamily="Monaco"
+            android:numeric="integer"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="#ededed">
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <Button android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="랩"
+                android:id="@+id/lap"
+                android:onClick="push"
+                android:textSize="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#f9f9f9" />
+            <Button android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="시작"
+                android:id="@+id/start"
+                android:onClick="push"
+                android:textSize="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#f9f9f9" />
+        </LinearLayout>
+
+        <ListView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:id="@+id/listView"
+            android:stackFromBottom="true"
+            android:smoothScrollbar="true"
+            android:layout_marginTop="15dp">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
